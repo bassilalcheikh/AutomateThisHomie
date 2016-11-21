@@ -25,7 +25,7 @@ def login_entry(username, password):
     submit_elem.click()
 
 # temporary variables; to be imported via login module later
-login_entry('blake.harrison@rate.com', 'qxm7g4k0+')
+login_entry('', '')
 
 #print(len(browser.find_elements_by_class_name("x-btn-arrow")))
 #reports_click_element = browser.find_element_by_id('ext-gen46')
