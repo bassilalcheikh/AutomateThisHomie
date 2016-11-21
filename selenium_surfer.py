@@ -30,21 +30,3 @@ login_entry('', '')
 #print(len(browser.find_elements_by_class_name("x-btn-arrow")))
 #reports_click_element = browser.find_element_by_id('ext-gen46')
 #reports_click_element.click()
-
-
-html = urllib.urlopen(browser.current_url)
-soup = BeautifulSoup(html, "html.parser")
-data = soup.findAll(text=True)
-
-for x in data:
-    print str(x)
-
-
-
-#assert "Python" in driver.title
-#elem = driver.find_element_by_name("q")
-#elem.clear()
-#elem.send_keys("pycon")
-#elem.send_keys(Keys.RETURN)
-#assert "No results found." not in driver.page_source
-#driver.close()

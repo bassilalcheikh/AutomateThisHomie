@@ -15,6 +15,4 @@ def login_info(welcome):
     password = raw_input("Please input password: ")
     return [username, password]
 
-credentials = login_info("Hello, welcome to the ETL mumbo-jumbo!")
-
-website_homepage = 'https://app.lenderx.com'
+credentials = login_info("Hello, welcome to the ETL automator!")
