@@ -1,0 +1,19 @@
+1479763977041	geckodriver	INFO	Listening on 127.0.0.1:58364
+1479763979065	mozprofile::profile	INFO	Using profile path C:\Users\BALCHE~1\AppData\Local\Temp\rust_mozprofile.ueY7YCM71O8l
+1479763979069	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\Firefox.exe
+1479763979084	geckodriver::marionette	INFO	Connecting to Marionette on localhost:58370
+1479763979885	Marionette	INFO	Listening on port 58370
+1479763981222	Marionette	INFO	startBrowser e36c8095-b56e-441b-aebf-64bced5e8934
+[Child 5756] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7432] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+rror: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 5224] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+JavaScript warning: https://cdn.adsafeprotected.com/sca.js, line 1: SyntaxError: for-in loop head declarations may not have initializers
+JavaScript error: https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js, line 15: TypeError: Z(...) is null
+JavaScript error: https://www.youtube.com/embed/rC5mMACDfm0?enablejsapi=1&html5=1&autoplay=1&adformat=1_5&color=white&controls=1&iv_load_policy=3&rel=0&showinfo=0, line 10: ReferenceError: ytcfg is not defined
+JavaScript warning: https://s.ytimg.com/yts/jsbin/player-en_US-vflSldmkq/base.js, line 508: Error: WebGL: getParameter: parameter: invalid enum value <enum 0x9246>
+JavaScript error: https://www.youtube.com/embed/rC5mMACDfm0?enablejsapi=1&html5=1&autoplay=1&adformat=1_5&color=white&controls=1&iv_load_policy=3&rel=0&showinfo=0, line 10: ReferenceError: ytcfg is not defined
+JavaScript warning: https://s.ytimg.com/yts/jsbin/player-en_US-vflSldmkq/base.js, line 508: Error: WebGL: getParameter: parameter: invalid enum value <enum 0x9246>
+[NPAPI 7408] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[NPAPI 7408] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5040] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
