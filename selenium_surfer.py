@@ -26,7 +26,10 @@ def login_entry(username, password):
 
 # temporary variables; to be imported via login module later
 login_entry('', '')
-
+time.sleep(5)
 #print(len(browser.find_elements_by_class_name("x-btn-arrow")))
 #reports_click_element = browser.find_element_by_id('ext-gen46')
 #reports_click_element.click()
+browser.switch_to.frame(browser.find_element_by_tag_name('iframe'))
+reports_element = browser.find_element_by_link_text('Reports') # this is not found
+reports_element.click()
