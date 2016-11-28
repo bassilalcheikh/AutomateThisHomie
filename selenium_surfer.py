@@ -7,10 +7,6 @@ from selenium import webdriver
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 import time 
 
-import re
-import urllib
-from bs4 import BeautifulSoup
-
 binary = FirefoxBinary('C:\Program Files (x86)\Mozilla Firefox\Firefox.exe')
 browser = webdriver.Firefox(firefox_binary=binary)
 
