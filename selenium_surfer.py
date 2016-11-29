@@ -26,9 +26,17 @@ login_entry('', '')
 
 time.sleep(10) # necessary for entire page markup to load; see how quick you can get it
 browser.switch_to.frame(browser.find_element_by_tag_name("iframe"))
+reports_element = browser.find_element_by_xpath("//*[contains(text(), 'Reports')]")
+#browser.execute_script("document.querySelectorAll('...stuff').click()")
 #reports_element = browser.find_element_by_xpath("//*[contains(text(), 'Reports')]").click() # "click" not working
-#reports_element = browser.find_element_by_xpath("//*[contains(text(), 'Reports')]").send_keys(Keys.ENTER) # "click" not working
-
+#reports_element = browser.find_element_by_xpath("//*[contains(text(), 'Reports')]").send_keys(keys.Keys.ENTER) # "click" not working
+'''
+element = WebDriverWait(browser, 60).until(
+    EC.element_to_be_clickable(By.XPATH, "//*[contains(text(), 'Reports')]")
+    )
+element.click()
+'''
+#browser.execute_script("arguments[0].click();", reports_element)
 # This is the error I'm getting in the console:
 # selenium.common.exceptions.ElementNotVisibleException: Message: Element is not visible
 # See this StackOverflow question for potential workaround: http://stackoverflow.com/q/27927964/3856609
