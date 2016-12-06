@@ -7,8 +7,9 @@
 #
 #
 #import time
-#import res, bs4
-#res = requests.get('http://')
+#import LenderXreadXLS
+#import selenium_surfer
+
 def login_info(welcome):
     print(welcome)
     username = raw_input("Please input username: ")
@@ -16,3 +17,5 @@ def login_info(welcome):
     return [username, password]
 
 credentials = login_info("Hello, welcome to the ETL automator!")
+
+#print(LenderXreadXLS.get_row_str(7))
