@@ -10,8 +10,7 @@ import time
 binary = FirefoxBinary('C:\Program Files (x86)\Mozilla Firefox\Firefox.exe')
 browser = webdriver.Firefox(firefox_binary=binary)
 
-browser.get("https://app.lenderx.com/?view=/view/report")
-
+# ~~~ FUNCTIONS ~~~
 def login_entry(username, password):
     login_email = browser.find_element_by_name('email')
     login_email.send_keys(username)
@@ -20,13 +19,20 @@ def login_entry(username, password):
     submit_elem = browser.find_element_by_name('submit')
     submit_elem.click()
 
-# temporary variables; to be imported via login module later
-login_entry('blake.harrison@rate.com', 'qxm7g4k0+')
+def tab_navigation():
+    for i in range(0,2):
+        time.sleep(10) # necessary for entire page markup to load; see how quick you can get it
+        reports_element = browser.find_element_by_xpath("//button[contains(text(), 'Reports')]") #element="7cf0097f-88ae-47c4-b15e-e20fe4e08eb7"
+        reports_element.click()
+        time.sleep(3)
+        view_element = browser.find_element_by_id('ext-comp-1047')
+        view_element.click()
 
-time.sleep(10) # necessary for entire page markup to load; see how quick you can get it
-elements = browser.find_elements_by_xpath("//button[contains(text(), 'Reports')]") #element="7cf0097f-88ae-47c4-b15e-e20fe4e08eb7"
-#for i in elements: i.click()
-elements[0].click()
+# ~~~ PROCEDURE ~~~
+# temporary variables; to be imported via login module later
+browser.get("https://app.lenderx.com/?view=/view/report")
+login_entry('blake.harrison@rate.com', 'qxm7g4k0+')
+tab_navigation()
 
 #surfer_output = open('surfer_output.txt', 'w')
 #surfer_output.write(repr(browser.page_source))
