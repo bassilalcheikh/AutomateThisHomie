@@ -1,0 +1,18 @@
+1485453572042	geckodriver	INFO	Listening on 127.0.0.1:52618
+1485453574026	mozprofile::profile	INFO	Using profile path C:\Users\BALCHE~1\AppData\Local\Temp\rust_mozprofile.YKiKFUT0HmBr
+1485453574046	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\Firefox.exe
+1485453574057	geckodriver::marionette	INFO	Connecting to Marionette on localhost:52624
+1485453574748	Marionette	INFO	Listening on port 52624
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 77: TypeError: this._recipeManager is null
+[Child 7376] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7376] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+rce://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
+JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/inspector/breadcrumbs.js, line 486: TypeError: this.handleMouseLeave is not a function
