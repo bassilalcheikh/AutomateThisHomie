@@ -10,13 +10,19 @@ db_connect = pymssql.connect(
     database = 'Analytics'
     )
 
-my_cursor = db_connect.cursor()
-my_cursor.execute('SELECT * FROM [Analytics].[dbo].[AppraiserPerformanceTest]')
+external_SQL_file = open('pythonSQLquery.sql','r')
+sql_script = external_SQL_file.read()
+external_SQL_file.close()
 
-row = my_cursor.fetchone()
-while row:
-    print("ID=%d, Name=%s" % (row[0], row[1]))
-    row = my_cursor.fetchone()
+my_cursor = db_connect.cursor()
+my_cursor.execute(sql_script)
+
+db_connect.commit()
+
+#row = my_cursor.fetchone()
+#while row:
+#    print("%s, %s" % (row[0], row[1]))
+#    row = my_cursor.fetchone() #without this, an infinite loop on the first row (why?)
 
 print("We're good, now we'll log off.")
 
